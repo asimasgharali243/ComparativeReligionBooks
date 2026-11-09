@@ -1,64 +1,48 @@
-# Book Library Structure
+# Comparative Religion — PDF document library
 
-This repository is organized under `library/` by topic.
+> **Verification status:** Documentation derived from inspected repository files. Application execution and screenshots have not yet been verified.
 
-## atheism
-- AtheismIslam_ShoaibMalik.pdf
-- Ten-Proofs-for-The-Existence-of-God.pdf
-- The Divine Reality PDF.pdf
-- The-Divine-Reality-Sapience-Institute-Online-Edition-October-2020-v1.1.pdf
-- en-islam-vs-atheism.pdf
+## Purpose and features
 
-## christianity
-- 101 Contradictions In The Bible.pdf
-- Answers to Born Again Preachers.pdf
-- Is The Trinity Doctrine Divinely Inspired.pdf
-- en-the-true-message-of-jesus-christ.pdf
+A categorized PDF library under `library/` and a catalog-related `pdf names.json` file.
 
-## comparative-religion
-- Kellogg,+Samuel+Henry,+A+Handbook+of+Comparative+Religion.pdf
-- Noor-Book.com  الإسلام والأديان دراسة مقارنة 3 .pdf
-- Noor-Book.com  علم مقارنة الأديان عند مفكري الإسلام 2 .pdf
-- the-choice-islam-and-christianity-volume-one.pdf
-- the-choice-islam-and-christianity-volume-two.pdf
+## Architecture
 
-## hadith/sahih-bukhari/english
-- SahihAl-bukhariVol.1-Ahadith1-875.pdf
-- SahihAl-bukhariVol.2-Ahadith876-1772.pdf
-- SahihAl-bukhariVol.3-Ahadith1773-2737.pdf
-- SahihAl-bukhariVol.4-Ahadith2738-3648.pdf
-- SahihAl-bukhariVol.5-Ahadith3649-4473.pdf
-- SahihAl-bukhariVol.6-Ahadith4474-5062.pdf
-- SahihAl-bukhariVol.7-Ahadith5063-5969.pdf
-- SahihAl-bukhariVol.8-Ahadith5970-6860.pdf
-- SahihAl-bukhariVol.9-Ahadith6861-7563.pdf
+```mermaid
+flowchart LR
+  User --> Client[Frontend or document reader]
+  Client --> Domain[Application modules / content]
+  Domain --> Storage[Configured backend, storage or local files]
+```
 
-## hadith/sahih-bukhari/urdu
-- Sahi-Bukhari-Jilad-1.pdf
-- Sahi-Bukhari-Jilad-2.pdf
-- Sahi-Bukhari-Jilad-3.pdf
-- Sahi-Bukhari-Jilad-4.pdf
-- Sahi-Bukhari-Jilad-5.pdf
-- Sahi-Bukhari-Jilad-6.pdf
+This diagram is conceptual, not a claim about a deployed system. Refer to the repository directories above for the actual source.
 
-## islam
-- 10-Answer_to_an_enemy_of_islam_07_02_2022 2.pdf
-- 16-Why_Did_They_Become_Muslims_07_02_2022 2.pdf
-- 18-Sahaba_The_Blessed_07_02_2022 (1) 2.pdf
-- 8-Belief_and_Islam_25_02_2025 2.pdf
-- IIA-2-Contents.pdf
-- Izhar_ul_Haq_[eng].pdf
-- Just One Message.pdf
-- Noor-Book.com  الإسلام ومصير الإنسان.pdf
-- Noor-Book.com  المسيح في الإسلام 2 .pdf
+## Installation and running
 
-## islam/seerah
-- English_ArRaheeq_AlMakhtum_THE_SEALED_NECTAR 2.pdf
+No server needed. Clone and browse the subject directories with a local PDF reader.
 
-## philosophy
-- Al Ghazali Incoherence of the Philosophers.pdf
-- Kalam.pdf
-- Marcus_Aurelius_Antoninus_to_Himself.pdf
+Install required runtimes and dependencies, inspect package manifests, and provide secrets through local ignored configuration. These commands are **not yet runtime-tested**.
 
-## social-questions
-- FINAL_-Why-Do-People-Suffer_-Gods-Existence-the-Problem-of-Evil-2.pdf
+## Screenshots and walkthrough
+
+No verified runtime screenshots have been captured. Once the application runs with sanitized demo data, capture each screen into `docs/screenshots/`, document its purpose and workflow, and record the run command and commit. Do not use synthetic screenshots as evidence of running code.
+
+## Security and maintenance
+
+Check redistribution rights, source attribution and licenses for every PDF.
+
+Run dependency checks, verify licenses and inspect configuration before deployment. Do not include real credentials or private data in screenshots.
+
+## Contributing and review
+
+Use feature branches and pull requests. Document reproduction steps, expected behavior, test results and any known limitations. Do not merge documentation until its setup commands and links have been checked.
+
+## Checklist
+
+- [x] Purpose and code-grounded structure
+- [x] Initial run instructions and security notes
+- [ ] Verify full local startup and workflows
+- [ ] Capture real, sanitized screenshots
+- [ ] Review deployment readiness
+
+See [documentation audit](docs/PORTFOLIO_AUDIT.md) for the detailed plan.
