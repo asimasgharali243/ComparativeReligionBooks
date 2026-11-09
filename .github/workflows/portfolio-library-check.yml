@@ -1,0 +1,32 @@
+name: Library catalog integrity
+on:
+  push:
+    branches: [docs/portfolio-professionalization-2026]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate catalog JSON and PDF paths
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          catalog = Path("pdf names.json")
+          if catalog.exists():
+              with catalog.open(encoding="utf-8") as handle:
+                  data = json.load(handle)
+              print(f"Catalog JSON parsed: {type(data).__name__}")
+          files = list(Path("library").rglob("*.pdf"))
+          print(f"PDF files found: {len(files)}")
+          if not files:
+              raise SystemExit("No PDF files found under library/")
+          invalid = [str(p) for p in files if p.stat().st_size == 0]
+          if invalid:
+              raise SystemExit("Empty PDF files: " + ", ".join(invalid[:10]))
+          print("Basic catalog integrity checks passed; copyright rights not assessed.")
+          PY
