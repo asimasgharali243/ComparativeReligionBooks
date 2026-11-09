@@ -1,4 +1,10 @@
-# Comparative Religion — PDF document library
+# Comparative Religion Digital Library | Curated PDF Catalog
+
+Subject-organized digital collection of comparative religion, philosophy, social questions and related PDF reading materials. Distribution rights require review.
+
+**Explore this repository:** [Architecture](docs/ARCHITECTURE.md) · [Developer runbook](docs/RUNBOOK.md) · [Screenshot evidence guide](docs/SCREENSHOT_GUIDE.md) · [Audit](docs/PORTFOLIO_AUDIT.md)
+
+**Discoverability topics:** `comparative-religion` · `digital-library` · `pdf` · `philosophy` · `research` · `reading-list`. These are suggested GitHub repository topics, not a claim that the repository settings have been updated.
 
 > **Verification status:** Documentation derived from inspected repository files. Application execution and screenshots have not yet been verified.
 
