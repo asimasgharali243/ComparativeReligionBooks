@@ -1,3 +1,11 @@
+# Comparative Religion · Reading Library
+
+A topic-organized collection of PDF reading material for comparative religion and related philosophical study. Browse the existing file index below; filenames and author attributions are preserved.
+
+![Reading library organization](docs/images/repository-overview.svg)
+
+The image describes the collection structure; this repository is a reading library, not an executable application. No installation is required. Use a PDF reader and the topic directories. Inclusion does not imply endorsement or grant redistribution rights beyond the original material's terms.
+
 # Book Library Structure
 
 This repository is organized under `library/` by topic.
@@ -62,3 +70,8 @@ This repository is organized under `library/` by topic.
 
 ## social-questions
 - FINAL_-Why-Do-People-Suffer_-Gods-Existence-the-Problem-of-Evil-2.pdf
+
+
+## Repository review
+
+See [review scope](docs/REPOSITORY_REVIEW.md). This update preserves the supplied collection and does not add or redistribute new books.
